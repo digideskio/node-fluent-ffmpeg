@@ -152,9 +152,9 @@ describe('Processor', function() {
       }, testFolder, function(err, names) {
         assert.ok(!err);
         names.length.should.equal(2);
-        names[0].should.equal('shot_001.jpg');
-        names[1].should.equal('shot_002.jpg');
-        fs.readdir(testFolder, function(err, files) {
+        names[0].should.equal('shot_000.jpg');
+        names[1].should.equal('shot_001.jpg');
+        fs.readdir(testFolder, function(err, files) {          
           var tnCount = 0;
           files.forEach(function(file) {
             if (file.indexOf('.jpg') > -1) {
